@@ -1,0 +1,5 @@
+pywt==1.1.1
+matplotlib==3.3.3
+numpy==1.18.5
+PyQt5
+opencv-python==4.3.0.36
