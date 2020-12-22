@@ -9,8 +9,8 @@ Image fusion combines the information of two or more images which are of the sam
 <table>
 
 <tr>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-21.png?raw=true"  /><br /><center><b>CT scan</b></center></td>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-16.png?raw=true" /><br /><center><b>MRI scan </b></center></td> <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-13-59.png?raw=true" /><br /><center><b>Fused Image</b></center></td>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/medical1.png"  /><br /><center><b>CT scan</b></center></td>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/medical2.png" /><br /><center><b>MRI scan </b></center></td> <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/out1956.jpg" /><br /><center><b>Fused Image</b></center></td>
     </td>
 </tr>
 
@@ -23,7 +23,7 @@ Wavelet is a component which is used to divide a function into various scale com
 <table>
 
 <tr>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-21.png?raw=true"  /><br /><center><b>CT scan</b></center>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/fusionAlgo.png"  /><br /><center><b>Fusion workflow</b></center>
     </td>
 </tr>
 </table>
@@ -43,7 +43,7 @@ For builidng this you need to run `python3 imfusion_main.py`. This will open a d
 
 <table>
     <tr>
-          <td><img height="250" src="https://raw.githubusercontent.com/robustTechie/ImageX/main/screenshot/Screenshot%20from%202020-12-01%2001-58-13.png" /><br /><center><b>Desktop app</b></center></td>
+          <td><img height="400" width = "500" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/app.png" /><br /><center><b>Desktop app</b></center></td>
     </tr>
 </table>
 
@@ -51,8 +51,8 @@ For builidng this you need to run `python3 imfusion_main.py`. This will open a d
 <table>
 Image Restoration
 <tr>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-21.png?raw=true"  /><br /><center><b>Faulty Image 1</b></center>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-26.png?raw=true" /><br /><center><b>Faulty Image 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-16.png?raw=true" /><br /><center><b>Fused image</b></center></td>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/s2.png"  /><br /><center><b>Faulty Image 1</b></center>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/s1.png" /><br /><center><b>Faulty Image 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-21%2002-23-39.png" /><br /><center><b>Fused image</b></center></td>
     </td>
     </tr>
 </table>
@@ -60,15 +60,19 @@ Image Restoration
 <table>
 Image Mixing
     <tr>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-15-02.png?raw=true"  /><br /><center><b>Image 1</b></center>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-15-09.png?raw=true" /><br /><center><b>Image 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-55.png?raw=true" /><br /><center><b>Fused image</b></center></td>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/person1.png"  /><br /><center><b>Image 1</b></center>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/person2.png" /><br /><center><b>Image 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-21%2002-15-37.png" /><br /><center><b>Fused image</b></center></td>
     </tr>
 </table>
 
 <table>
 Face Morphing
     <tr>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-15-02.png?raw=true"  /><br /><center><b>Face 1</b></center>
-    <td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-15-09.png?raw=true" /><br /><center><b>Face 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/ImageX/blob/main/screenshot/Screenshot%20from%202020-12-01%2002-14-55.png?raw=true" /><br /><center><b>Fused image</b></center></td> 
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-22%2015-13-02.png"  /><br /><center><b>Face 1</b></center>
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-22%2015-13-10.png" /><br /><center><b>Face 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/out1371.jpg" /><br /><center><b>Fused image</b></center></td> 
     </tr>
 </table>
+
+#### Todo
+* Add change operation support
+* Add other algorithm support like DCT and PCA
