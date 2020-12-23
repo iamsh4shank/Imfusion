@@ -26,20 +26,20 @@ def fusion(img1, img2):
     FUSION_METHOD = 'mean' # Can be 'min' || 'max || anything you choose according theory
 
     # Read the two image
-    I1 = cv2.imread(img1,0)
-    I2 = cv2.imread(img2,0)
-
-    x = I1.shape
-    invX= x[::-1] 
-    # We need to have both images the same size
-    I2 = cv2.resize(I2,invX) # I do this just because i used two random images
+    I1 = cv2.imread(img1)
+    I2 = cv2.imread(img2)
 
     ## Fusion algo
+    iR1 = I1.copy()
+    iR1[:,:,1] = iR1[:,:,2] = 0
+
+    iR2 = I2.copy()
+    iR2[:,:,1] = iR2[:,:,2] = 0
 
     # First: Do wavelet transform on each image
     wavelet = 'db1'
-    cooef1 = pywt.dwt2(I1, 'db5', mode = 'periodization')
-    cooef2 = pywt.dwt2(I2, 'db5', mode = 'periodization')
+    cooef1 = pywt.dwt2(iR1, 'db5', mode = 'periodization')
+    cooef2 = pywt.dwt2(iR2, 'db5', mode = 'periodization')
     cA1, (cH1, cV1, cD1) = cooef1
     cA2, (cH2, cV2, cD2) = cooef2
 
@@ -47,8 +47,51 @@ def fusion(img1, img2):
     cH = (cH1 +cH2)/2
     cV = (cV1+cV2)/2
     cD = (cD1+cD2)/2
-    finco = cA, (cH,cV,cD)
-    outImage = pywt.idwt2(finco, 'db5', mode = 'periodization')
+    fincoR = cA, (cH,cV,cD)
+    outImageR = pywt.idwt2(fincoR, 'db5', mode = 'periodization')
+
+
+    iG1 = I1.copy()
+    iG1[:,:,0] = iG1[:,:,2] = 0
+    iG2 = I2.copy()
+    iG2[:,:,0] = iG2[:,:,2] = 0
+
+    cooef1 = pywt.dwt2(iG1, 'db5', mode = 'periodization')
+    cooef2 = pywt.dwt2(iG2, 'db5', mode = 'periodization')
+    cA1, (cH1, cV1, cD1) = cooef1
+    cA2, (cH2, cV2, cD2) = cooef2
+
+    cA = (cA1+cA2)/2
+    cH = (cH1 +cH2)/2
+    cV = (cV1+cV2)/2
+    cD = (cD1+cD2)/2
+    fincoG = cA, (cH,cV,cD)
+    outImageG = pywt.idwt2(fincoG, 'db5', mode = 'periodization')
+
+    iB1 = I1.copy()
+    iB1[:,:,0] = iG1[:,:,1] = 0
+    iB2 = I2.copy()
+    iB2[:,:,0] = iG2[:,:,1] = 0
+
+
+    cooef1 = pywt.dwt2(iB1, 'db5', mode = 'periodization')
+    cooef2 = pywt.dwt2(iB2, 'db5', mode = 'periodization')
+    cA1, (cH1, cV1, cD1) = cooef1
+    cA2, (cH2, cV2, cD2) = cooef2
+
+    cA = (cA1+cA2)/2
+    cH = (cH1 +cH2)/2
+    cV = (cV1+cV2)/2
+    cD = (cD1+cD2)/2
+    fincoB = cA, (cH,cV,cD)
+    outImageB = pywt.idwt2(fincoB, 'db5', mode = 'periodization')
+
+    outImage = I1.copy()
+    outImage[:,:,0] = outImage[:,:,1] = outImage[:,:,2] = 0
+    outImage[:,:,0] = outImageR[:,:,0]
+    outImage[:,:,1] = outImageG[:,:,1]
+    outImage[:,:,2] = outImageB[:,:,2] 
+
     outImage = np.multiply(np.divide(outImage - np.min(outImage),(np.max(outImage) - np.min(outImage))),255)
     outImage = outImage.astype(np.uint8)
 
