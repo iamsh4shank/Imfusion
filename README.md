@@ -43,7 +43,7 @@ For builidng this you need to run `python3 imfusion_main.py`. This will open a d
 
 <table>
     <tr>
-          <td><img height="400" width = "500" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/app.png" /><br /><center><b>Desktop app</b></center></td>
+          <td><img height="400" width = "500" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-24%2014-02-38.png" /><br /><center><b>Desktop app</b></center></td>
     </tr>
 </table>
 
