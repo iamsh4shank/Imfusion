@@ -1,4 +1,4 @@
-pywt==1.1.1
+PyWavelets==1.1.1
 matplotlib==3.3.3
 numpy==1.18.5
 PyQt5
