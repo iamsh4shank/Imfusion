@@ -69,7 +69,7 @@ Image Mixing
 Face Morphing
     <tr>
     <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-22%2015-13-02.png"  /><br /><center><b>Face 1</b></center>
-    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-22%2015-13-10.png" /><br /><center><b>Face 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/out1371.jpg" /><br /><center><b>Fused image</b></center></td> 
+    <td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/screenshots/Screenshot%20from%202020-12-22%2015-13-10.png" /><br /><center><b>Face 2</b></center></td><td><img height="250" src="https://github.com/robustTechie/Imfusion/blob/main/demo/out1762.jpg" /><br /><center><b>Fused image</b></center></td> 
     </tr>
 </table>
 
